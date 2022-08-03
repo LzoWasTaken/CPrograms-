@@ -1,4 +1,0 @@
-This directory has: 
-	2 subdirectories
-	3 files
-	0 symbolic links
