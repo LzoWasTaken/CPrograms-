@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "passwordmanager.h"
 
 char masterPassword[50];
 int placeInArray = 0;

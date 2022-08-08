@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include "listingdetails.h"
 
 void formatJson(int directoryCount, int fileCount, int symbolicLinkCount, FILE *outputDestination) {
     fprintf(outputDestination, "data=[\n");
