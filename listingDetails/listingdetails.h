@@ -1,4 +1,12 @@
-void formatJson(int directoryCount, int fileCount, int symbolicLinkCount, FILE *outputDestination); 
-void formatCsv(int directoryCount, int fileCount, int symbolicLinkCount, FILE *outputDestination);
-void formatDefault(int directoryCount, int fileCount, int symbolicLinkCount, FILE *outputDestination); 
+typedef struct {
+    int directoryCount;
+    int fileCount;
+    int symbolicLinkCount;
+    const char *format;
+    FILE *destination;
+} output;
+
+void formatJson(output o); 
+void formatCsv(output o);
+void formatDefault(output o); 
 
